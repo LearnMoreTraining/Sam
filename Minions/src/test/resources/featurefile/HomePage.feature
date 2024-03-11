@@ -4,6 +4,6 @@ Feature:Amazon
   Scenario: Mouser Hower Actions
     Given user handles the mouser actions
 
-   @dragdrop
+   @dd
   Scenario: drag and drop
     Given user handles the drag and drop
