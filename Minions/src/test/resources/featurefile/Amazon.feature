@@ -1,5 +1,5 @@
 Feature: Amazon Automation
 
-  @Amazon01
+  @Amazon0101
   Scenario: Search Product
     Given user search the product
