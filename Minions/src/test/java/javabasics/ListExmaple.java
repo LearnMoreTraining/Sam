@@ -24,6 +24,10 @@ public class ListExmaple {
         l.add(67);
         l.add(45);
 
+        for(int o:l){
+            System.out.println(o);
+        }
+
         System.out.println(l);
 
         System.out.println(l.get(4));
@@ -35,6 +39,12 @@ public class ListExmaple {
         d.add("aa");
         System.out.println(d);
         System.out.println(d.get(0));
+
+        for(String h:d){
+            System.out.println(h);
+        }
+
+
     }
 
 }
