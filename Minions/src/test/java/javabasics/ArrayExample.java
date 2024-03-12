@@ -6,7 +6,15 @@ public class ArrayExample {
 
         int [] a = {45,23,12,100} ; //0,1,2,3 //size -4
 
+        for(int k:a){
+            System.out.println(k);
+        }
+
         String [] j = {"aravinth","learnmore"}; //0,1
+
+        for(String p:j){
+            System.out.println(p);
+        }
 
         System.out.println(j[1]);
 

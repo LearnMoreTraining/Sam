@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 
      features = {"src/test/resources/featurefile"} ,
      glue = {"stepdefination"},
-        tags = "@Amazon01"
+        tags = "@table"
 
 )
 

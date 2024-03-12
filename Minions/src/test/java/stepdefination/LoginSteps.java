@@ -162,5 +162,25 @@ WebElement frameElemnt = driver.findElement(By.className("demo-frame"));
         System.out.println(columnValues);
 
         System.out.println(columnValues.get(0));
+
+
+        WebElement revenuTable = driver.findElement(By.className("wikitable"));
+
+//       int j = revenuTable.findElements(By.xpath("//tr/td[6]")).size();
+//
+//        for (int i=0; i < j; i++){
+//
+//         String fy19=   revenuTable.findElements(By.xpath("//tr/td[6]")).get(i).getText();
+//            System.out.println(fy19);
+//
+//        }
+
+        List<WebElement> reElem =revenuTable.findElements(By.xpath("//tr/td[6]"));
+        List<String> h = new ArrayList<String>();
+        for(WebElement e:reElem){
+            h.add(e.getText());
+        }
+
+        System.out.println(h);
     }
 }
