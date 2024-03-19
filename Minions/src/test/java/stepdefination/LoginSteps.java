@@ -7,6 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,6 +22,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class LoginSteps extends BaseCode {
 
@@ -127,8 +129,20 @@ public class LoginSteps extends BaseCode {
        a.clickAndHold(amaz).build().perform();
 
     //   driver.findElement(By.linkText("Baby Wishlist")).click();
-       driver.findElement(By.partialLinkText("y Wish")).click();
 
+
+       driver.findElement(By.partialLinkText("y Wish")).sendKeys(Keys.chord(Keys.CONTROL,Keys.ENTER));
+
+      Set<String> windPro = driver.getWindowHandles();
+      for(String s:windPro){
+          driver.switchTo().window(s);
+          if(driver.getTitle().equals("Amazon: Baby Wish List")){
+              break;
+          }
+
+      }
+
+        driver.switchTo().defaultContent();
     }
 
     @Given("user handles the drag and drop")
