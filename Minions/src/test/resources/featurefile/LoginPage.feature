@@ -4,9 +4,15 @@ Feature: User verify the login functionality of Learn More Application
   @TS01  @Minions
   Scenario: User validates the error message in login page
    # Given User navigates to url
+    #before step
     When User Enters the username "aravinth" and password "xyz"
+    #after step
+    #before step
     And User clicks the login button
+        #after step
+    #before step
     Then User verify the error message "Invalid Credentials.Please Check Once"
+        #after step
   #after
 
   #before

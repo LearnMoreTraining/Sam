@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 
      features = {"src/test/resources/featurefile"} ,
      glue = {"stepdefination"},
-     tags = "@TS01",
+     tags = "@Mouse",
      plugin = {"pretty",
                "html:target/output/cucumberreport.html",
              "json:target/output/rep.json",
